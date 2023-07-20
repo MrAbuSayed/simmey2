@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import { createContext, useState } from 'react';
 import './App.css';
+import Navber from './Components/Nav/Navber';
+import AllRoute from './Components/Route/AllRoute';
+
+export const BackgroundChange= createContext({});
 
 function App() {
+
+  const [background,setBackground]=useState({backgroundColor:'rgb(0,0,0)',color:'white'});
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <BackgroundChange.Provider value={[background,setBackground]}>
+        <div className="App" style={background}>
+        
+        <div className="navSec">
+        <Navber/>
+        </div>
+        <div className="allSec">
+          <AllRoute/>
+        </div>
+        </div>
+      </BackgroundChange.Provider>
   );
-}
+
+};
 
 export default App;
