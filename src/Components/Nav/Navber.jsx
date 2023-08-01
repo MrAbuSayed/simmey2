@@ -3,11 +3,12 @@ import './Navber.css'
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloudDownload, faCode, faHome, faPhone, faPodcast } from '@fortawesome/free-solid-svg-icons';
+import { faCloudDownload, faHome, faPhone, faPodcast, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { faEye, faListAlt, faMoon, faSun, faUser } from '@fortawesome/free-regular-svg-icons';
 import { BackgroundChange } from '../../App';
-import { faFacebook, faInstagramSquare, faLinkedin, faTelegram, faTwitter, faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGithub, faInstagramSquare, faLinkedin, faTelegram, faTwitter,  } from '@fortawesome/free-brands-svg-icons';
 import profile from '../images/profile.jpg';
+import Cv from '../images/myCv.pdf'
 
 const Navber = () => {
 
@@ -37,7 +38,7 @@ const Navber = () => {
                     <div className="slideHd">
                     <h5>Abu Sayed</h5>
                     <h5><Typed
-                         strings={['Web Developer','Front-End Developr','Web Desiner']}
+                         strings={['Web Developer','Front-End Developer','Web Desiner','React Developer','CV Writter','Resume Writter']}
                          typeSpeed={150}
                          backSpeed={100}
                          loop
@@ -96,10 +97,10 @@ const Navber = () => {
                     </Link>
                 </div>
                 <div className="link">
-                    <Link className='navLink' to={'/product'} >
-                        <FontAwesomeIcon icon={faCode} />
+                    <Link className='navLink' to={'/my_team_members'} >
+                        <FontAwesomeIcon icon={faUsers} />
                         <br />
-                        <span>Product</span>
+                        <span>Team</span>
                     </Link>
                 </div>
                 </div>
@@ -113,21 +114,21 @@ const Navber = () => {
                         <h1>Abu Sayed</h1>
                         {/*   Text Changer */}
                         <h3>Iam a <Typed
-                         strings={['Web Developer','Web Desiner','Front-Endd Developr']}
+                         strings={['Web Developer','Front-End Developer','Web Desiner','React Developer','CV Writter','Resume Writter']}
                          typeSpeed={150}
                          backSpeed={100}
                          loop
                          /></h3>
                          <div className="socialIcn" style={background}>
-                             <Link href="" style={background} className="sclLnk"><FontAwesomeIcon icon={faFacebook} /> </Link>
-                             <Link href="" style={background} className="sclLnk"><FontAwesomeIcon icon={faTwitter} /> </Link>
-                             <Link href="" style={background} className="sclLnk"><FontAwesomeIcon icon={faInstagramSquare} /></Link>
-                             <Link href="" style={background} className="sclLnk"><FontAwesomeIcon icon={faLinkedin} /></Link>
-                             <Link href="" style={background} className="sclLnk"><FontAwesomeIcon icon={faWhatsappSquare} /></Link>
+                             <Link target='_blank' to='https://github.com/MrAbuSayed' style={background} className="sclLnk"><FontAwesomeIcon icon={faLinkedin} /></Link>
+                             <Link target='_blank' to='https://facebook.com/Developer.Sayed.1' style={background} className="sclLnk"><FontAwesomeIcon icon={faFacebook} /> </Link>
+                             <Link target='_blank' to='https://twitter.com/DeveloperShayed' style={background} className="sclLnk"><FontAwesomeIcon icon={faTwitter} /> </Link>
+                             <Link target='_blank' to='https://www.instagram.com/developer_sayed/' style={background} className="sclLnk"><FontAwesomeIcon icon={faInstagramSquare} /></Link>
+                             <Link target='_blank' to='https://github.com/MrAbuSayed' style={background} className="sclLnk"><FontAwesomeIcon icon={faGithub} /></Link>
                          </div>
                          <div className="navBtn">
-                            <button style={background} className="contactBtn">Download CV &nbsp;  <FontAwesomeIcon icon={faCloudDownload} /></button>
-                            <button style={background} className="cvBtn">Contact Me &nbsp;  <FontAwesomeIcon icon={faTelegram} /></button>
+                            <a href={Cv} ><button style={background} className="contactBtn">Download CV &nbsp;  <FontAwesomeIcon icon={faCloudDownload} /></button></a>
+                            <Link to='/contact'> <button style={background} className="cvBtn">Contact Me &nbsp;  <FontAwesomeIcon icon={faTelegram} /></button></Link>
                          </div>
                      </div>
              </div>

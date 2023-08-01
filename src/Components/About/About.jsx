@@ -59,7 +59,7 @@ const About = () => {
                     <div className="pricingSec">
                         <div className="price1">
                              <span className="ico"><FontAwesomeIcon icon={faChessQueen}/></span>
-                             <h3>Popular</h3>
+                             <h3>Basic</h3>
                              <span className='price'>$ <span>Depending On project</span></span>
                              <p>Web Design</p>
                              <p>Front-End Development </p>
@@ -68,7 +68,7 @@ const About = () => {
                              <p style={{color:'red',textDecoration:'line-through'}}>Web Development</p>
                              <p style={{color:'red',textDecoration:'line-through'}}>Real-Estate Website</p>
                              <p style={{color:'red',textDecoration:'line-through'}}>SEO Optimizing</p>
-                             <Link><button className="byBtn">Start Now  &nbsp;&nbsp;&nbsp; <FontAwesomeIcon icon={faChevronRight}/></button></Link>
+                             <Link to='/contact'><button className="byBtn">Start Now  &nbsp;&nbsp;&nbsp; <FontAwesomeIcon icon={faChevronRight}/></button></Link>
                         </div>
                         <div className="price1">    
                         <span className="ico"><FontAwesomeIcon icon={faRocket}/></span>
@@ -81,7 +81,7 @@ const About = () => {
                              <p>Web Development</p>
                              <p>Real-Estate Website</p>
                              <p>SEO Optimizing</p>
-                             <Link><button className="byBtn">Start Now  &nbsp;&nbsp;&nbsp; <FontAwesomeIcon icon={faChevronRight}/></button></Link>
+                             <Link  to='/contact'><button className="byBtn">Start Now  &nbsp;&nbsp;&nbsp; <FontAwesomeIcon icon={faChevronRight}/></button></Link>
                         </div>
                     </div>
 

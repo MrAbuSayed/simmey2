@@ -1,11 +1,35 @@
 import React from 'react';
 import './Home.css';
+import Typed from 'react-typed';
+import CountUp from 'react-countup';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div>
-            <h1>Home</h1>
-            <h1> corrupti obcaecati voluptas odit cupiditate esse quia dolor? Assumenda consectetur nam repellat doloribus illo a vero qui blanditiis rerum sed. Suscipit soluta ad, blanditiis excepturi odio quod natus aliquam nobis distinctio veniam! Minima corporis voluptate distinctio labore, aspernatur nihil quam delectus fugiat excepturi placeat fuga, cum harum officia pariatur. Enim quaerat totam officia unde dolore ipsa atque cumque at dolor modi, iste molestias consequuntur. Earum omnis eliLorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia qui dolores, inventore praesentium eum et nihil eligendi? Magni alias, tempore corporis numquam, culpa, officiis ea molestias error quisquam fugiat earum? Modi illo, rerum in perspiciatis tempora rem odio, officia, at corporis nisi recusandae? Saepe natus, veritatis odio neque excepturi expedita unde earum repudiandae id molestiae distinctio quae officia soluta doloribus quidem iure quia! Qui blanditiis quam mollitia, necessitatibus delectus soluta praesentium, veritatis vero sed facilis nulla, placeat ullamgendi odit necessitatibus eaque quidem qui consectetur. Commodi eos voluptates quae in quidem alias aspernatur autem quisquam facere! Vero aliquid omnis ad magni quis atque commodi vel. Similique illum omnis rerum atque porro illo cupiditate voluptatibus doloribus cumque labore molestias repellendus saepe dolorem quod adipisci, magnam iste nam natus esse, libero obcaecati quae? Sed, quae unde.</h1>
+        <div className='home'>
+            <div className="homeContainer">
+            <h1>Hellow...!!!</h1>
+            <h2>Iam <Typed strings={['Abu Sayed']} typeSpeed={200}  backSpeed={200}/> </h2>
+            <div className="homeSec">
+                <div className="count1">
+                <h1><CountUp end={100} duration={1} />+</h1>
+                <h1>Complete <br /> Project</h1>
+                </div>
+                <div className="count1">
+                <h1><CountUp end={80} duration={1} />+</h1>
+                <h1>Happy <br /> Client</h1>
+                </div>
+                <div className="count1">
+                <h1><CountUp end={40} duration={1} />+</h1>
+                <h1>Running <br /> Project</h1>
+                </div>
+                <div className="count1">
+                <h1><CountUp end={100} duration={1} />+</h1>
+                <h1>Start <br /> Project</h1>
+                </div>
+            </div>
+           <Link to='/about'> <button className='homeBtn'>About ME</button></Link>
+            </div>
         </div>
     );
 };

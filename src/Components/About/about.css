@@ -72,6 +72,7 @@ box-shadow: 0 .3rem .3rem .3rem rgba(255, 217, 0, 0.717);background: none;
     padding: .6rem 1rem ;
     border-radius: 50%;
     color: gold;margin: 1rem;
+    margin: 1rem 0;
 }
 
 .price1 p{

@@ -4,7 +4,7 @@
 }
 
 .navSec1{
-    width: 15%;
+    width: 12%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -13,13 +13,14 @@
 .navSecUp{
     background-color: darkcyan;
     margin-bottom: 1rem;
-    padding: 1rem 0;border-radius: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 .sideText{
     display: none;
 }
 .navSecDwn{
-    background-color: rgb(65, 120, 68);
+    background-color: rgb(11, 29, 57);
     border-radius: 1rem;
 }
 .navSec2{
@@ -49,21 +50,10 @@
 .nightBtn, .dayBtn{
     background: none;
     border: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .dayBtn{
     color: gold;
-    animation: sun .2s infinite ease-in-out;
-}
-@keyframes sun {
-    0%{
-    transform: rotate(0);
-
-    }
-    100%{
-        transform: rotate(360deg);
-    
-        }
 }
 .nightBtn{
     color: black;
@@ -290,6 +280,7 @@ border-right: none;
 ::-webkit-scrollbar{
     width:.5rem;
     height:.4rem;
+    cursor:move;
 }
 
 ::-webkit-scrollbar-thumb{
