@@ -1,0 +1,217 @@
+
+.about .aboutHdr{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family:monospace;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.aboutHdr span{
+color: gold;
+border-radius: 10rem;
+box-shadow: 0 .3rem .3rem .3rem rgba(255, 217, 0, 0.717);background: none;
+}
+
+.myDsc{
+    padding: 2rem;
+}
+.myDsc p ,h3{
+    font-family: monospace;
+}
+.myDsc p{
+    font-size: 1rem;
+}
+.dsc2{
+    display: flex;justify-content: center;flex-wrap: wrap;
+}
+.child:nth-child(2){
+    margin: 0 0 0 2rem;
+}
+
+.service1, .service2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.servChild{
+    padding: 1rem;
+    border-right: .1px solid rgb(149, 149, 137);
+    border-bottom: .1px solid rgb(149, 149, 137);
+}
+.servChild p{
+    font-size: 1rem;
+    font-family: monospace;
+    opacity: .8;
+}
+.servChild span{
+    font-size: 2rem;
+    border: 1px solid gold;
+    padding: .6rem 1rem ;
+    border-radius: 50%;
+    color: gold;
+}
+
+.pricingSec{
+    display: flex;
+    justify-content: center;align-items: center;
+}
+
+.price1{
+    border: 1px solid rgba(0, 255, 170, 0.355);
+    margin: .5rem;
+    text-align: center;border-radius: .4rem;
+    padding: 1rem;
+}
+
+.ico{
+    font-size: 2rem;
+    border: 1px solid gold;
+    padding: .6rem 1rem ;
+    border-radius: 50%;
+    color: gold;margin: 1rem;
+}
+
+.price1 p{
+    font-size: 1rem;
+    font-family: monospace;
+    opacity: .8;
+    margin: .8rem;
+}
+
+
+.price{
+    color: gold;
+    font-weight: 700;
+}
+.price span{
+    font-family: monospace;
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+.byBtn{
+    font-size: 1.2rem ;
+    font-family:  monospace;
+    font-weight: bold;font-style: italic;
+    background: none;
+    color: rgba(180, 178, 178, 0.782);
+    border: none;text-transform: uppercase;
+}
+.byBtn:hover{
+    color: gold;
+}
+
+.client{
+    display: flex;flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.client1{
+    padding: 2.3rem;
+    box-shadow: 0 .2px .2px .2px seashell;
+}
+.client1 img{
+    width: 5rem;
+}
+
+.testimoSec{
+    padding: 1rem;
+    text-align: center;
+}
+
+.testimoSec p{
+    font-size: 1.1rem;
+    font-family: monospace;
+    opacity: .8;
+    font-style: italic;font-weight: bolder;
+}
+
+.testimoSec img{
+    width: 20%;
+    border-radius: 50%;
+}
+.testimoSec span{
+    font-weight: 400;
+    font-size: 1rem;margin: 0;
+}
+
+.funSec{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.fun1{
+    border: .1px solid rgba(245, 222, 179, 0.402);
+    border-bottom: none;
+    padding: 2rem;text-align: center;
+}
+
+.fun1 span{
+    font-size: 2rem;
+    border: 1px solid gold;
+    padding: .6rem 1rem ;
+    border-radius: 50%;
+    color: gold;
+}
+
+.fun1 p{
+    font-size: 1.1rem;
+    font-family: monospace;
+    opacity: .8;
+}
+
+
+@media screen and (max-width:580px){
+    .funSec{
+        flex-wrap: wrap;
+    }
+    .fun1{
+        border: .1px solid rgba(245, 222, 179, 0.402);
+        padding: 2rem;text-align: center;margin: .5rem;
+    }
+
+
+    .client{
+       flex-wrap: wrap;
+    }
+    
+    .client1{
+        padding: 2.3rem;
+        box-shadow: 0 .2px .2px .2px seashell;
+    }
+    
+    .client1 img{
+        width: 5rem;
+    }
+    .pricingSec{
+        display: flex;
+        justify-content: center;align-items: center;flex-wrap: wrap;
+    }
+
+
+
+}
+
+
+@media screen and (max-width:510px) {
+    .service1, .service2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;align-items: center;
+        /* flex-wrap: wrap; */
+    }
+
+    
+    
+}
+
+
+

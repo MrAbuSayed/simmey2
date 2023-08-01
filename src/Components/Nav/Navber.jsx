@@ -7,6 +7,7 @@ import { faCloudDownload, faCode, faHome, faPhone, faPodcast } from '@fortawesom
 import { faEye, faListAlt, faMoon, faSun, faUser } from '@fortawesome/free-regular-svg-icons';
 import { BackgroundChange } from '../../App';
 import { faFacebook, faInstagramSquare, faLinkedin, faTelegram, faTwitter, faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
+import profile from '../images/profile.jpg';
 
 const Navber = () => {
 
@@ -32,7 +33,7 @@ const Navber = () => {
             <div className="navSecUp">
 
                 <div className="sideText">
-                    <img src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/359804288_243659565121674_4993480980418521073_n.jpg?_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHQ-qPmD_4wK8LmdeAiHiwi2Wgv0DhiO37ZaC_QOGI7fgm005roxfKWYEgiFxzFdKvFMu9VAhKgBa5bHlcNqbNf&_nc_ohc=ws-_h6oZS6EAX_9RpDO&_nc_zt=23&_nc_ht=scontent.fdac14-1.fna&oh=00_AfBfT5zpAAYuI5zIE1SwcWbbtjoO2nY7vWqUCUbFN5Mbyg&oe=64BCC45E" alt="" />
+                    <img src={profile} alt="" />
                     <div className="slideHd">
                     <h5>Abu Sayed</h5>
                     <h5><Typed
@@ -108,7 +109,7 @@ const Navber = () => {
                        
                      </div>
                      <div className="navSec2Txt" style={background}>
-                        <img src="https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/359804288_243659565121674_4993480980418521073_n.jpg?_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHQ-qPmD_4wK8LmdeAiHiwi2Wgv0DhiO37ZaC_QOGI7fgm005roxfKWYEgiFxzFdKvFMu9VAhKgBa5bHlcNqbNf&_nc_ohc=ws-_h6oZS6EAX_9RpDO&_nc_zt=23&_nc_ht=scontent.fdac14-1.fna&oh=00_AfBfT5zpAAYuI5zIE1SwcWbbtjoO2nY7vWqUCUbFN5Mbyg&oe=64BCC45E" alt="" />
+                        <img src={profile} alt="" />
                         <h1>Abu Sayed</h1>
                         {/*   Text Changer */}
                         <h3>Iam a <Typed

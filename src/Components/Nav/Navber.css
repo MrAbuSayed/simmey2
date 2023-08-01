@@ -208,7 +208,7 @@ border-right: none;
     }
     
     .navSec1{
-        width: 120%;
+        width: 100%;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -276,6 +276,10 @@ border-right: none;
         color: gold;
         animation: sun .2s infinite ease-in-out;
     }
+    .navSec2{
+        width: 100%;
+        margin: 0 3rem;
+    }
 
     .navSec2Txt img{
         width: 8rem;
@@ -285,15 +289,12 @@ border-right: none;
 
 ::-webkit-scrollbar{
     width:.5rem;
-    height: .5rem;
+    height:.4rem;
 }
 
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(transparent, rgb(23, 251, 2));
+    background: linear-gradient( rgba(0, 149, 255, 0.996), rgba(127, 58, 144, 0.996),rgba(234, 255, 0, 0.996), rgba(31, 213, 11, 0.996));
     border-radius:1rem;
 }
-::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(transparent, rgb(251, 2, 247));
-    border-radius:1rem;
-}
+
 
